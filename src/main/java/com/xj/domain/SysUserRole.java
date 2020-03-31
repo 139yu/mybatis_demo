@@ -19,4 +19,12 @@ public class SysUserRole {
     public void setRoleId(Long roleId) {
         this.roleId = roleId;
     }
+
+    @Override
+    public String toString() {
+        return "SysUserRole{" +
+                "userId=" + userId +
+                ", roleId=" + roleId +
+                '}';
+    }
 }

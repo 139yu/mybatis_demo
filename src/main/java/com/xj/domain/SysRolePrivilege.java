@@ -12,6 +12,14 @@ public class SysRolePrivilege {
         this.roleId = roleId;
     }
 
+    @Override
+    public String toString() {
+        return "SysRolePrivilege{" +
+                "roleId=" + roleId +
+                ", privilegeId=" + privilegeId +
+                '}';
+    }
+
     public Long getPrivilegeId() {
         return privilegeId;
     }

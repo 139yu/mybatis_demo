@@ -5,6 +5,15 @@ public class SysPrivilege {
     private String privilegeName;
     private String privilegeURL;
 
+    @Override
+    public String toString() {
+        return "SysPrivilege{" +
+                "id=" + id +
+                ", privilegeName='" + privilegeName + '\'' +
+                ", privilegeURL='" + privilegeURL + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

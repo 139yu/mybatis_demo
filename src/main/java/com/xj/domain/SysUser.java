@@ -1,5 +1,6 @@
 package com.xj.domain;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class SysUser {
@@ -9,6 +10,20 @@ public class SysUser {
     private String userEmail;
     private String userInfo;
     private byte[] headImg;
+
+    @Override
+    public String toString() {
+        return "SysUser{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userInfo='" + userInfo + '\'' +
+                ", headImg=" + Arrays.toString(headImg) +
+                ", createTime=" + createTime +
+                '}';
+    }
+
     private Date createTime;
 
     public Date getCreateTime() {
