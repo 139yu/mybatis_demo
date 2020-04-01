@@ -6,6 +6,8 @@
     <settings>
         <!--设置日主输出为LOG4J-->
         <setting name="logImpl" value="LOG4J"/>
+        <!--设置支持驼峰的命名-->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
     </settings>
     <!--简化类命名空间-->
     <typeAliases>

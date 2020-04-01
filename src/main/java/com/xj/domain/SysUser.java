@@ -11,6 +11,15 @@ public class SysUser {
     private String userInfo;
     private byte[] headImg;
 
+    public SysUser() {
+    }
+
+    public SysUser(String userName, String userPassword, Date createTime) {
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.createTime = createTime;
+    }
+
     @Override
     public String toString() {
         return "SysUser{" +
