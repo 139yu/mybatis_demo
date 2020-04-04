@@ -9,16 +9,38 @@ import java.util.Map;
 
 public interface UserMapper {
     SysUser selectById(Long id);
+
     List<SysUser> selectAll();
+
     Integer insert(SysUser user);
+
     Integer insert2(SysUser user);
+
     Integer insert3(SysUser user);
+
     Integer updateById(SysUser user);
-    List<SysRole> selectRolesByUserIdAndRoleEnabled(@Param("userId") Long userId,@Param("enabled") Integer enabled);
+
+    List<SysRole> selectRolesByUserIdAndRoleEnabled(@Param("userId") Long userId, @Param("enabled") Integer enabled);
+
     List<SysUser> selectByUser(SysUser user);
+
     Integer updateByIdSelective(SysUser user);
+
     SysUser selectByIdOrUsername(SysUser user);
+
     List<SysUser> selectByIdList(List<Long> idList);
+
     Integer insertList(List<SysUser> userList);
-    Integer updateByMap(Map<String,Object> map);
+
+    Integer updateByMap(Map<String, Object> map);
+
+    SysUser selectUserAndRoleById1(Long id);
+
+    SysUser selectUserAndRoleById2(Long id);
+
+    SysUser selectUserAndRoleById3(Long id);
+
+    SysUser selectUserAndRoleById4(long id);
+
+    SysUser selectUserRoleListByUserId(Long id);
 }

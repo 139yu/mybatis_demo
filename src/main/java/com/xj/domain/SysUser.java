@@ -2,6 +2,7 @@ package com.xj.domain;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class SysUser {
     private Long id;
@@ -10,6 +11,24 @@ public class SysUser {
     private String userEmail;
     private String userInfo;
     private byte[] headImg;
+    private List<SysRole> roles;
+    private SysRole role;
+
+    public SysRole getRole() {
+        return role;
+    }
+
+    public void setRole(SysRole role) {
+        this.role = role;
+    }
+
+    public List<SysRole> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<SysRole> roles) {
+        this.roles = roles;
+    }
 
     public SysUser() {
     }
